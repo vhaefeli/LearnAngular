@@ -1,27 +1,11 @@
-# NgPokemonApp
+#Apprendre Angular en faisant une App pokemon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
+J'apprends Angular en suivant le Tuto de Simon Dieny et je ne peux que le conseiller.
+https://www.youtube.com/watch?v=DTIYVffhJuU&t=1535s&ab_channel=SimonDieny-CodeSenior
 
-## Development server
+il est sur Angular 13 et moi sur la version 16 mais pour l'instant pas de problème. 
+Il y a juste les liens sur ses codes qui ne fonctionnent pas mais je ne suis pas la seule à suivre ses tutos donc je les ai retrouvés sur gitHub. n'hésitez pas à copier les miens (en particulier ceux de mock-pokemon-list.ts et pokemon-type-color-pipe.ts).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+au moment ou j'écris cela j'en suis à 3h de vidéo. J'ai decidé de faire un commit ici pour avoir un historique des méthodes qu'on a étudié jusqu'à présent.
+On va surement faire un peu de ménage pour avoir un code plus propre pour la suite mais comme ça on peut retrouver les diverses informations que j'ai mis jusqu'ici.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
