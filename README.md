@@ -1,4 +1,4 @@
-#Apprendre Angular en faisant une App pokemon
+# Apprendre Angular en faisant une App pokemon
 
 J'apprends Angular en suivant le Tuto de Simon Dieny et je ne peux que le conseiller.
 https://www.youtube.com/watch?v=DTIYVffhJuU&t=1535s&ab_channel=SimonDieny-CodeSenior
