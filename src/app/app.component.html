@@ -1,0 +1,60 @@
+<!-- <h1>Lister de Pokémons</h1> -->
+<!--methode 1> <input type="number"
+(click)="selectPokemon($event)"> PAS TRES FRIENDLY CA C_EST MIEUX: -->
+
+<!-- le ="0" sur le keyup signifie que l-on ne faire rien de plus que de recuperer la touche et qu-elle se met dans #input -->
+<!-- <p>{{ input.value}}</p> -->
+
+<!-- le #input est une variable referencee, ca permet de simplifier l-ecriture du template -->
+
+<!-- keyup.enter est un pseudo evenement d-angular -->
+
+<!-- 2eme partie -->
+<!-- <input
+  #input
+  (keyup.enter)="selectPokemon(input.value)" 
+  type="number"
+  />
+
+
+<p *ngIf="pokemonSelected">
+  vous avez selectionne le pokemon: {{pokemonSelected?.name}}
+</p>
+<p *ngIf="!pokemonSelected">
+  aucun pokemon n'a ete trouve
+</p>
+
+<p *ngFor="let pokemon of pokemonList">
+  {{ pokemon.name}}
+</p> -->
+<!-- fin 2eme partie -->
+
+<!-- avec materialize
+une row fait 12 unites donc si les colonnes font 4 alors sur un ecran medium (m) il y aura 3 colonnes-->
+
+<h1 class="center">Pokémons</h1>
+
+<div class="container">
+  <div class="row">
+    <div *ngFor="let pokemon of pokemonList" class="col m4 s6">
+      <div class="card horizontal" pkmnBorderCard="pink">
+        <div class="card-image">
+          <img [src]="pokemon.picture" />
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>{{ pokemon.name }}</p>
+            <p>
+              <small>{{ pokemon.created | date:"dd/MM/yyyy" }}</small>
+            </p>
+            <span
+              *ngFor="let type of pokemon.types"
+              class="{{type |pokemonTypeColor}}">
+              {{type}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
