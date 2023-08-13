@@ -54,6 +54,17 @@ permet de pouvoir déclarer des valeurs non initialisées sans avoir besoin de r
 -> créer le service pokemon dans le dossier pockemon
 
 ->@Injectable
+#### si on veut que le service soit accessible à toute l'app'
+    @Injectable({
+      //le decorateur Injectable indique que ce service peut avoir des dependance
+      providedIn: "root", // garantit qu-on a la meme instance du service a travers toute l-application
+    })
+
+#### si on veut que le service soit accessible que par un module
+    @Injectable()
+dans le fichier `nomDuModule`.module.ts rajouter apres les imports:
+    providers: [NomDuServiceService]
+
 
 
 
@@ -74,6 +85,9 @@ dans un composant> PAS DE CONSTRUCTEUR DANS 99% des cas. les variable s'initiali
     <p *ngFor="let pokemon of pokemonList">
       {{ pokemon.name}}
     </p>
+
+## + caste un string en nombre
+
 
 ## materialize
 une row fait 12 unites donc si les colonnes font 4 alors sur un ecran medium (m) il y aura 3 colonnes
