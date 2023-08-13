@@ -66,6 +66,14 @@ dans le fichier `nomDuModule`.module.ts rajouter apres les imports:
     providers: [NomDuServiceService]
 
 
+## noouveau formulaire
+nouvelles directives: NgForm et NgModel de @angular/forms
+
+
+rajouter dans les imports des module.ts concerne le: FormsModule
+
+puis creer un nouveau composant:
+    ng g component pokemon/pokemon-form --inline-template=false
 
 
 
@@ -95,3 +103,16 @@ une row fait 12 unites donc si les colonnes font 4 alors sur un ecran medium (m)
 l-objet prend: 
 si c'est un petit écran (s) -> tout l'écran = 12 colonnes
 si c'est un écran moyen (type écran d'ordi standard) -> 8 colonnes avec un décalage de 2 colonnes = sera centré sur la page
+
+
+pattern="^[a-zA-Z0-9àéèç]{1,25}$" => entre 1 et 25 lettres et chiffre et lettres accentuees
+
+
+##qq fonctions et atributs
+
+    <div [hidden]="name.valid || name.pristine"
+                class="card-panel red accent-1">
+                Le nom du pokémon est requis (1-25).
+          </div>
+
+cache le message si le nom entré est correct (.valid) ou si aucune modification du champs n-a encore été faite (.pristine)

@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from "./app.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { PokemonModule } from "./pokemon/pokemon.module";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [AppComponent, PageNotFoundComponent],
-  imports: [BrowserModule, PokemonModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, PokemonModule, AppRoutingModule],
   // attention! dans le AppRoutingModule il y a la route 404 qui intercepte toutes routes qui n'ont pas ete
   // interceptees avant. il faut donc bien declarer son import en dernier pour que toutes les declarations
   // de routes "correctes" se fassent avant la route 404.
