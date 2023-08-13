@@ -4,11 +4,11 @@
 ## les commandes utilisees dans le terminal:
 
 ### voir ce que la commande créerait comme fichier sans le faire vraiment
-<la commande> --dry-run
+  "la commande" --dry-run
 
 ### pour créer le nouveau dossier
 
-ng new ng-pokemon-app --minimal --style=css
+  ng new ng-pokemon-app --minimal --style=css
 
 --minimal créer un dossier "light" et --style=css défini le langage du style ' css'
 
@@ -20,33 +20,37 @@ permet de pouvoir déclarer des valeurs non initialisées sans avoir besoin de r
 
 
 ### POUR LANCER LE SERVEUR> 
-ng serve
+  ng serve
 
 => localhost:4200
 
 
 ### directive = class sans template
- ng generate directive border-card
+  ng generate directive border-card
+
 ->fichier avec decorateur @Directive
 
 ### créer des pipe personnalisés:
-ng g pipe pokemon-type-color
+  ng g pipe pokemon-type-color
+
 ->fichier avec decorateur @Pipe
 
 ### créer un nouveau component
-ng g component list-pokemon --inline-template=false
+  ng g component list-pokemon --inline-template=false
 
 ->nouveau dossier avec fichier avec decorateur @Component + un fichier .html 
 
 --inline-template=false > on a créer une version light de notre projet donc pour qu-angular créer quand meme tous les fichiers relatifs a un nouveau composant on doit mettre cette commande.
 
 ### nouveau module
-ng g module pokemon
-->nouveau dossier avec fichier <nomdumodule>.module.ts avec decorateur @NgModule
+  ng g module pokemon
+
+->nouveau dossier avec fichier "nomdumodule".module.ts avec decorateur @NgModule
 
 
 ### nouveau service
-ng g service pokemon/pokemon
+  ng g service pokemon/pokemon
+
 -> créer le service pokemon dans le dossier pockemon
 
 ->@Injectable
