@@ -1,5 +1,10 @@
 # INFOS DIVERSES
 
+## à installer en +
+
+un module pour pouvoir simuler une api: (--save-dev pour le mettre dans nos dépendances de développement)
+
+    npm install angular-in-memory-web-api --save-dev
 
 ## les commandes utilisees dans le terminal:
 
